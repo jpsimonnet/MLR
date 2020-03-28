@@ -1,4 +1,46 @@
 /* CONTENU STYLE */
+ 
+div.people {
+	
+	background: transparent;
+
+	
+	&:hover, &:focus {
+                 -webkit-transform: scale(1.05) !important;
+                 transform: scale(1.05) !important;
+                 -webkit-transition: all 0.3s;
+                 transition: all 0.3s;
+                /*filter: drop-shadow(1px 1px 2px #0a4591);
+                -webkit-filter: drop-shadow(1px 1px 2px #0a4591);*/
+
+            }
+
+	
+     a {
+          background: transparent;
+          
+          &:hover, &:focus {
+	          
+	          background: transparent;
+	          
+	          }
+        }
+        
+        
+     img {
+             &:hover, &:focus {
+                 /*-webkit-transform: scale(1.05) !important;
+                 transform: scale(1.05) !important;*/
+                 -webkit-transition: all 0.3s;
+                 transition: all 0.3s;
+                filter: drop-shadow(2px 2px 5px #0a4591);
+                -webkit-filter: drop-shadow(2px 5px 5px #0a4591);
+
+      }
+      }
+      
+}
+
 
 .btn-left {
     display: inline-block;
@@ -524,4 +566,9 @@ ul.quizz-etape {
             content: "\e105";
         }
     }
+}
+
+
+.formulaire_contact legend {
+	display:none;
 }
