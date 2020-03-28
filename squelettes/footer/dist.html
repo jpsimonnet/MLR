@@ -1,0 +1,90 @@
+<div class="footer-informations">
+
+    <div class="container">
+
+        <div class="row ">
+
+            <div class="col-sm-12 col-md-9">
+                     
+<BOUCLE_where(ARTICLES) {id_rubrique IN 4}{0,1}{par num titre}{tout}>
+	<div class=" " >
+		 <div class="wherewework">
+	[ <a href="#URL_RUBRIQUE{4}"><h3>(#TITRE)</h3></a>]
+	[<div class="#EDIT{texte}">(#DESCRIPTIF)</div>]
+	</div>
+	</BOUCLE_where>
+	</div>  
+            </div>
+
+            <div class="col-sm-12 col-md-3">
+
+                <div class="contact">
+           
+
+                    <div class="contact-reseaux-sociaux">
+                        <h3>Social share</h3>
+                        <p>
+                            <a href="https://www.facebook.com/MyanmarLawLibrary/" title="Facebook page"><i class="fa fa-facebook"></i><span class="sr-only">Facebook</span></a>
+                            <a href="https://twitter.com/myanmar_law_lib" title="Twitter account"><i class="fa fa-twitter"></i><span class="sr-only">Twitter</span></a>
+                            
+                                 <a href="https://www.linkedin.com/company/mlr-legal-consultants/" title="Linkedin account"><i class="fa fa-linkedin"></i><span class="sr-only">Linkedin</span></a>
+                            
+                            
+                           
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div><!-- /.footer-informations -->
+
+<div class="footer-sitemap">
+    <div class="container">
+        <div class="row">
+            <INCLURE{fond=inclure/menu-footer-plan,identifiant=footer-plan} />
+        </div>
+    </div>
+
+</div><!-- /.footer-sitemap -->
+
+<div class="footer-copyright">
+
+    <div class="container">
+
+        <div class="row">
+	        
+[(#ID_ARTICLE|=={10}|non)
+
+[(#ID_ARTICLE|=={15}|non)
+
+	<div class="ajax">
+	  #FORMULAIRE_CONTACT
+      </div>
+
+]
+
+]
+	        
+	        
+
+
+            <div class="col-xs-12 text-center">
+               <div class="col-xs-12 text-center signature">
+	               
+                <p>#NOM_SITE_SPIP</p>  
+                [<p>(#LOGO_SITE_SPIP|image_reduire{200,*})</p>]     
+            </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+

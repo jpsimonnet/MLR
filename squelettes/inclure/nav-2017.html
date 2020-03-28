@@ -1,0 +1,15 @@
+<div id="menu-site" class="navbar-collapse collapse">
+
+    <BOUCLE_menu(MENUS){identifiant=nav-2017}>
+
+      <ul class="nav navbar-nav navbar-left">
+       		<BOUCLE_entrees(MENUS_ENTREES){id_menu}{par rang}>
+                        <li>[(#MENUS_AFFICHER_ENTREE|extraire_balise{a})]</li>
+            
+       		</BOUCLE_entrees>
+ 
+      </ul>
+
+    </BOUCLE_menu>
+
+</div><!--/.navbar-collapse -->
